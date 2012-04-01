@@ -159,7 +159,7 @@ $(function(){
         $("#query").val("");
         var link = make_link();
         $("#link").html("Share this: <a href='" + link + "'>" + link + "</a>");
-        $("#twitter-frame").attr('src', twitter_url + "?url=" + encodeURIComponent(link) + "&text=QueryPicNZ");
+        $("#twitter-frame").attr('src', twitter_url + "?url=" + encodeURIComponent(link) + "&text=" + encodeURIComponent("Made with QueryPicNZ") + "&hashtags=querypic");
         if (dataSources.sources[0].interval == "month") {
             x_date = "%b %Y";
             xLabel = "Month";
